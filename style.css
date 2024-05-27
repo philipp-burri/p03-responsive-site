@@ -1,6 +1,10 @@
+
+
+  
+
 .page{
     background-color: #F1DAAD;
-    width: 390px;
+
 
    
 }
@@ -12,34 +16,63 @@ a{
 
 li{
     list-style: none;
+    
+}
+
+ul{
+    padding-inline-start: 0;
 }
 header{
+    
+    height: 110px;
     display: grid;  
     grid-template-columns: 0.5fr 1fr 0.5fr;
     background-color: #814827;
     color: white;
     text-decoration: none;
+    justify-items: center;
+    
   
     
 }
 
 
-.menu {
-    height: 100%;
-    width: 100%;
 
+
+
+.nav{
+
+    grid-column: 3/4;
+    
 }
 
 .logo{
-    grid-column: 2;
+    grid-column: 1/2;
     height:80px;
     width: 195px;
+    margin-top: 15px;
+
+
     
 }
 
 .bag{
+    margin-top: 30px;
+    width: 52px;
+    height: 39px;
+    display: none;
 
 }
+
+
+.menu {
+    margin-top: 30px;
+    height: 40px;
+    width: 28px;
+    display: none;
+}
+
+
 main{
     min-height: 844px; 
     max-height: auto;
@@ -50,6 +83,8 @@ footer {
     background-color: #814827;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    justify-items: center;
    
 
 }
@@ -61,13 +96,25 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 grid-column: 1/2;
+width: 100px;
+height: 90px;
+grid-row: 1/3;
+grid-column: 1/2;
+justify-self: center;
+
 }
+
+
 
 .label-fairtrade{
   grid-column: 3/-1;
   width: 100%;
   height: 100%;
   object-fit: cover;  
+  width: 90px;
+  height: 125px;
+  grid-column: 3/4;
+  grid-row: 1/-1;
 }
 
 
@@ -82,3 +129,243 @@ grid-column: 1/2;
     grid-row: 1/2;
     text-align: center;
 }
+    
+
+
+    @media only screen and (max-width: 768px) {
+
+    .page{
+        background-color: #F1DAAD;
+        width: 390px;
+    
+       
+    }
+    
+    a{
+        
+        color: white;
+    }
+    
+    li{
+        list-style: none;
+        
+    }
+    
+    ul{
+        padding-inline-start: 0;
+    }
+    header{
+       
+        height: 110px;
+        display: grid;  
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        background-color: #814827;
+        color: white;
+        text-decoration: none;
+        justify-items: center;
+        
+      
+        
+    }
+    
+    
+    
+    
+    
+    .nav{
+    
+        display: none;
+    }
+    
+    .logo{
+        grid-column: 2;
+        height:80px;
+        width: 195px;
+        margin-top: 15px;
+
+    
+    
+        
+    }
+    
+    .bag{
+        display: block;
+        grid-column: 3/4;
+        margin-top: 30px;
+        width: 52px;
+        height: 39px;}
+    
+    
+    .menu {
+        display: block;
+        margin-top: 30px;
+        height: 40px;
+        width: 28px;
+    }
+    
+    
+    main{
+        min-height: 844px; 
+        max-height: auto;
+        margin-left: 100px;
+    }
+    
+    footer {
+        background-color: #814827;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        color: white;
+        justify-items: center;
+       
+    
+    }
+    
+    
+    
+    .label-bio{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    grid-column: 1/2;
+    width: 100px;
+    height: 90px;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    justify-self: center;
+    
+    }
+    
+    .label-fairtrade{
+      grid-column: 3/-1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  
+      width: 90px;
+      height: 125px;
+      grid-column: 3/4;
+      grid-row: 1/-1;
+    }
+    
+    
+    .kontakt {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+    }
+    
+    .socialmedia{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: center;
+    }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+/* desktop */
+
+
+    @media only screen and (min-width: 1000px){
+
+        header{
+            display: flex;
+            background-color: #814827;
+            color: white;
+            text-decoration: none;
+            justify-content: space-between;
+            align-items: center;
+            height: 133px;
+        }
+        li{
+            list-style: none;
+            margin: 0;
+        }
+        .li1{
+            margin-right: 100px;
+        }
+        
+        .li2{
+            margin-right: 130px;
+        }
+        .nav{
+            display: flex;
+            font-size: 32px;
+            a:link{
+                text-decoration: none;
+            }
+            a:hover{
+                color: rgb(189, 191, 192);
+            }
+        }
+
+        .logo{
+           
+            height: 102px;
+            width: 285px;
+            margin-left: 128px;
+        }
+
+        footer {
+    background-color: #814827;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    justify-items: center;
+   
+
+}
+
+
+
+.label-bio{
+width: 100%;
+height: 100%;
+object-fit: cover;
+grid-column: 1/2;
+width: 100px;
+height: 90px;
+grid-row: 1/3;
+grid-column: 1/2;
+justify-self: center;
+
+}
+
+
+
+.label-fairtrade{
+  grid-column: 3/-1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  width: 90px;
+  height: 125px;
+  grid-column: 3/4;
+  grid-row: 1/-1;
+}
+
+
+.kontakt {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+}
+
+.socialmedia{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+}
+
+    }
+        
+    
